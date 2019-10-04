@@ -3,7 +3,7 @@
 //
 
 #include "Jet.h"
-#include "ctime"
+#include <ctime>
 
 Jet::Jet(string brand, string model, string fuelType, int numberOfEngines) {
     setBrand(brand);
@@ -25,7 +25,7 @@ void Jet::setNumberOfEngines(int numberOfEngines) {
 double Jet::mileageEstimate(double time) {
     double mileage = (rand()%61 + 40) * time;
     if(numberOfEngines > 2 && fuelType == "Rocket")
-    	mileage *= 1 + (numberOfEngines * 0.055);
+    	mileage += mileage * numberOfEngines * 0.055;
     
     return mileage;
 }

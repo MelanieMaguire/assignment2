@@ -10,7 +10,7 @@
 class Jet : public PoweredVehicle {
 
 private:
-    string myNumberOfEngines;
+    int myNumberOfEngines;
 
 public:
     Jet();
