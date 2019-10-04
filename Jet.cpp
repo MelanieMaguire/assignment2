@@ -21,6 +21,9 @@ void Jet::setNumberOfEngines(int numberOfEngines) {
     myNumberOfEngines = numberOfEngines;
 }
 
-double Jet::mileageEstimate(double time) {
-    double mileage = (rand()%61 + 40) * time;
+double Jet::mileageEstimate(double time, int numberOfEngines) {
+    if(numberOfEngines > 2)
+    	double mileage = (rand()%61 + 40) * time * 1 + (numberOfEngines * 0.055);
+    else
+    	double mileage = (rand()%61 + 40) * time;
 }
