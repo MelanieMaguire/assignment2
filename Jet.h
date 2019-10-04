@@ -1,13 +1,29 @@
+//
+// Created by Melanie Maguire on 10/4/19.
+//
+
+#ifndef DRIVINGSIMULATOR_CAR_H
+#define DRIVINGSIMULATOR_CAR_H
+
+#include "PoweredVehicle.h"
+
+class Jet : public PoweredVehicle {
+
+private:
+    string myNumberOfEngines;
+
 public:
-    explicit Jet(string brand, string model, int numEngines = 1);
+    Jet();
 
-    virtual ~Bicycle();
-    int getGearCount();
-    void setGearCount(int gearCount);
+    explicit Jet(string brand, string model, string fuelType,
+                 string numberOfEngines);
+
+    virtual ~Jet();
+    string getNumberOfEngines();
+    void setNumberOfEngines(string myNumberOfEngines);
     virtual double mileageEstimate(double time);
-
     virtual string toString();
 };
 
 
-#endif //DRIVINGSIMULATOR_BICYCLE_H
+#endif //DRIVINGSIMULATOR_CAR_H
