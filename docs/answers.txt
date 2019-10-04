@@ -1,1 +1,88 @@
+a.) 
+    maguire@linprog8.cs.fsu.edu:HW2/assignment2/docs>git push
+    warning: push.default is unset; its implicit value is changing in
+    Git 2.0 from 'matching' to 'simple'. To squelch this message
+    and maintain the current behavior after the default changes, use:
 
+      git config --global push.default matching
+
+    To squelch this message and adopt the new behavior now, use:
+
+      git config --global push.default simple
+
+    See 'git help config' and search for 'push.default' for further information.
+    (the 'simple' mode was introduced in Git 1.7.11. Use the similar mode
+    'current' instead of 'simple' if you sometimes use older versions of Git)
+
+    Username for 'https://github.com': MelanieMaguire
+    Password for 'https://MelanieMaguire@github.com':
+    Counting objects: 9, done.
+    Delta compression using up to 56 threads.
+    Compressing objects: 100% (5/5), done.
+    Writing objects: 100% (7/7), 877 bytes | 0 bytes/s, done.
+    Total 7 (delta 2), reused 0 (delta 0)
+    remote: Resolving deltas: 100% (2/2), completed with 1 local object.
+    To https://github.com/MelanieMaguire/assignment2.git
+       f4975e5..f6fee50  master -> master
+
+
+b.)
+    9 commits done to the repository (6 from Esteban, 3 from myself)
+    Found using: "git shortlog"
+
+
+c.)
+    2019-09-25 18:13:30
+    Found using: "git blame .gitignore"
+
+
+d.)
+    1. Allows for easier merging.  Multiple branches can be merged all 
+       together at once
+    2. Can build two independent features within a large app without 
+       developers messing with the main code and features
+
+
+e.)
+    git status: used to view files in a commit that have been altered but not
+                committed (staging area)
+    git log: used to display commits and filter the results (full repo history)
+
+
+f.)
+    git log Vehicle.h
+
+
+g.)
+    git log --grep=file
+
+
+h.)
+    Inheritance:   parent class data is passed down (inherited) to child classes
+		   i.e. class Circle has data inherited from class Shape such as
+		        a Draw() function
+    Polymorphism:  a child class can be a version of a parent class.
+		   i.e. Circle is a Shape and can be defined as Shape
+    Encapsulation: when data and methods are put in one place that work on 
+		   that data in one unit
+		   i.e. a class
+
+
+i.)
+    Integration Manager Workflow: gives every developed their own
+    public repository.  Public repositories of each developer can push
+    to a central integration manager which resolves conflicts between
+    versions developers create which goes to a master repository 
+    developers pull from.
+    Dictator and Lieutenants model: allows developers to push to one 
+    of many "lieutenants" resolving conflicts between developers' 
+    versions, and then the lieutenants push to the dictator, which 
+    pushes to the main repository which can be pulled by developers.
+
+
+j.)
+    They would benefit because there would be lieutenants to solve
+    merges between certain team members and then the dictator can
+    merge all changes accordingly. There wouldn't be massive merges
+    from developers and having code overwritten/not pulled would be
+    completely eliminated.
