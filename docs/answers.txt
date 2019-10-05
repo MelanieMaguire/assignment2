@@ -86,3 +86,13 @@ j.)
     merge all changes accordingly. There wouldn't be massive merges
     from developers and having code overwritten/not pulled would be
     completely eliminated.
+
+
+5
+Both are used in the driver simulator.  Polymorphism is used in the
+Bicycle constructors since the Vehicle constructor and bicycle 
+constructors are almost the same (apart from the gear aspect).
+Encapsulation is used with get and set functions so that the users
+cannot change the functionality of the class and must use info that
+is only public or functions that can't be accessed to access other
+data.

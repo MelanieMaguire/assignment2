@@ -3,19 +3,18 @@
 //
 
 #include "Skateboard.h"
-#include <ctime>
 
 Skateboard::Skateboard(string brand, string model) {
     setBrand(brand);
-    setModel(model);
+    setModel(model);		// no gear because skateboards don't have gears
 }
 
 Skateboard::~Skateboard() = default;
 
 double Skateboard::mileageEstimate(double time) {
-    double mileage = (rand() % 41 - 10)/100 * time;
-    if(time > 25 && time < 250)
-	mileage += rand() % (mileage / 3 + 1) - 1
+    double mileage = (rand() % 41 - 10)/100 * time;	// mileage between 0.1 and 0.5
+    if(time > 25 && time < 250)				// 25 < time < 250 
+	mileage += rand() % (mileage / 3 + 1) - 1	// add from 1 to 1/3 mileage time
     return mileage;
 }
 

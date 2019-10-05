@@ -4,7 +4,7 @@
 
 #include "Motorcycle.h"
 
-Motorcycle::Motorcycle() {
+Motorcycle::Motorcycle() {	// changed everything to motorcycle (very similar to car)
     myEngineSize = "unknown";
     setBrand("Custom");
     setModel("CoolKidModel");
@@ -34,9 +34,9 @@ void Motorcycle::setEngineSize(string engineSize) {
 }
 
 double Car::mileageEstimate(double time) {
-    double mileage = 10 * time;
-    if (fuelType == "super") {
-        mileage += mileage * 0.065;
+    double mileage = 10 * time;			// mileage is 10min
+    if (fuelType == "super") {			// if super fuel type
+        mileage += mileage * 0.065;		// increase by 6.5%
     }
     return mileage;
 }

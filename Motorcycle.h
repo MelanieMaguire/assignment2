@@ -7,7 +7,7 @@
 
 #include "PoweredVehicle.h"
 
-class Motorcycle : public PoweredVehicle {
+class Motorcycle : public PoweredVehicle {	// changed everything from car to motorcycle
 
 private:
     string myEngineSize;

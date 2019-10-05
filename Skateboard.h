@@ -7,13 +7,13 @@
 
 #include "Vehicle.h"
 
-class Skateboard : public Vehicle {
-
+class Skateboard : public Vehicle {	// changed everything to skateboard from bicycle
+						
 public:
-    explicit Skateboard(string brand, string model);
+    explicit Skateboard(string brand, string model);	// got rid of gears
 
     virtual ~Skateboard();
-    virtual double mileageEstimate(double time);
+    virtual double mileageEstimate(double time);	// no get/set
 
     virtual string toString();
 };
