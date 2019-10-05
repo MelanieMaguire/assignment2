@@ -9,8 +9,8 @@ void printVehiclesRoster(Vehicle **vehicles, int size);
 
 int main() {
     std::cout << "Driving simulator" << std::endl;
-    int size = 6;
-    int capacity = 10;
+    int size = 12;
+    int capacity = 15;
     Vehicle **vehiclesArray = new Vehicle *[capacity];
 
     // 6-13 are added
@@ -22,10 +22,10 @@ int main() {
     vehiclesArray[5] = new Car("BMW", "X5", "diesel", "grande");
     vehiclesArray[6] = new Jet("Boeing", "737", "Diesel", 4);
     vehiclesArray[7] = new Jet("Beechcraft", "AT-6", "Rocket", 3);
-    vehiclesArray[9] = new Skateboard("Zero", "some");
-    vehiclesArray[11] = new Skateboard("Blind", "board");
-    vehiclesArray[12] = new Motorcycle("Harley", "Road King", "diesel", "large");
-    vehiclesArray[13] = new Motorcycle("Yamaha", "Supersport", "super", "medium");
+    vehiclesArray[8] = new Skateboard("Zero", "some");
+    vehiclesArray[9] = new Skateboard("Blind", "board");
+    vehiclesArray[10] = new Motorcycle("Harley", "Road King", "diesel", "large");
+    vehiclesArray[11] = new Motorcycle("Yamaha", "Supersport", "super", "medium");
 
     printVehiclesRoster(vehiclesArray, size);
 

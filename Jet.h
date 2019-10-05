@@ -11,7 +11,7 @@ class Jet : public PoweredVehicle {
 
 private:
     int myNumberOfEngines;		// int instead of string (num engines)
-
+    string numEngines;
 public:
     Jet();
 
@@ -19,7 +19,7 @@ public:
                  int numberOfEngines);
 
     virtual ~Jet();
-    string getNumberOfEngines();
+    int getNumberOfEngines();
     void setNumberOfEngines(int myNumberOfEngines);
     virtual double mileageEstimate(double time);
     virtual string toString();

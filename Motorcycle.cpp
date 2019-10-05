@@ -33,7 +33,7 @@ void Motorcycle::setEngineSize(string engineSize) {
 
 }
 
-double Car::mileageEstimate(double time) {
+double Motorcycle::mileageEstimate(double time) {
     double mileage = 10 * time;			// mileage is 10min
     if (fuelType == "super") {			// if super fuel type
         mileage += mileage * 0.065;		// increase by 6.5%
@@ -41,7 +41,7 @@ double Car::mileageEstimate(double time) {
     return mileage;
 }
 
-string Car::toString() {
+string Motorcycle::toString() {
     return "-> Motorcycle\n" + PoweredVehicle::toString() + "\n\tEngine Size: " +
            getEngineSize();
 }
